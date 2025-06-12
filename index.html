@@ -1,16 +1,355 @@
 <!DOCTYPE html>
-<html>
+<html lang="sl">
 <head>
-  <meta charset="UTF-8">
-  <title>Moja osebna predstavitev</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>O meni – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; background: #f2f2f2; text-align: center; padding: 50px; }
-    h1 { color: #333; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f23;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1c1c3b;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #ff7043;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .about-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-img img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 5px solid #ff7043;
+      object-fit: cover;
+    }
+
+    .about-text {
+      flex: 2;
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+
+    .info {
+      background-color: #1f1f3d;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .info p {
+      margin-bottom: 0.5rem;
+    }
+    .info a {
+  color: white;
+  text-decoration: none;
+}
+.info a:hover {
+  color: #ff7043;
+}
+
+
+    .info strong {
+      color: #ff7043;
+    }
+
+    .buttons {
+      margin-top: 1.5rem;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 0.7rem 1.2rem;
+      background: #ff7043;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-right: 1rem;
+      transition: background 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #ff5722;
+    }
+
+    .skills {
+      margin-top: 4rem;
+    }
+
+    .skills h2 {
+      color: #ff7043;
+      margin-bottom: 1rem;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .skill {
+      background-color: #1c1c3b;
+      padding: 0.7rem 1.2rem;
+      border-radius: 20px;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: #aaa;
+      padding: 2rem;
+    }
+    .projects {
+  background-color: #0f0f23;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects h2 span {
+  color: #ff7043;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #1f1f3d;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-text {
+  padding: 1rem;
+}
+
+.card-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #ff7043;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff5722;
+}
+
+.see-more {
+  margin-top: 2rem;
+}
+
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text {
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Živjo, jaz sem Lara 👋</h1>
-  <p></p>
-  <p></p>
+
+  <header>
+    <h1>Lara Zupanc</h1>
+  </header>
+
+  <div class="container">
+
+    <section class="about">
+      <div class="about-img">
+        <img src="/ZupancLara_ProfilnaFoto.JPG" alt="Lara Zupanc">
+      </div>
+      <div class="about-text">
+        <h2>O meni</h2>
+        <p>Sem Lara Zupanc, absolventka dodiplomskega študija Informatike in podatkovnih tehnologij. Srednjo šolo sem obiskovala na Gimnaziji Lava, kjer se je tudi začelo moje zanimanje za informatiko.
+Veljam za komunikativno, odgovorno in pozitivno osebo, ki rada dela z ljudmi in v timu. V prostem času aktivno delujem v študentskem klubu Laški akademski klub, kjer že nekaj let soustvarjam dogajanje, trenutno pa kot predsednica skrbim za celotno delovanje društva, organizacijo projektov in sodelovanje z lokalno skupnostjo.
+
+Poleg tega se ukvarjam tudi z oblikovanjem spletnih strani. V prostem času predvsem v WordPressu, kjer lahko končni produkt predam stranki v nadaljno skrb.</p>
+        <div class="info">
+          <p><strong>Ime:</strong> Lara Zupanc</p>
+          <p><strong>Email:</strong><a href="mailto:zupanclara03@gmail.com" > zupanclara03@gmail.com</a></p>
+          <p><strong>Telefon:</strong> <a href="tel:+38631590680">+386 31 590 680</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/larazupanc" target="_blank" text-decoration: none;">github.com/larazupanc</a></p>
+          <p><strong>Izobrazba:</strong> Informatika in podatkovne tehnologije (UN) - absolvent</p>
+        </div>
+        <div class="buttons">
+          <a href="mailto:zupanclara03@gmail.com">Kontaktiraj me</a>
+        </div>
+      </div>
+    </section>
+
+<section class="skills">
+  <h2>Tehnične veščine</h2>
+  <div class="info">
+    <p><strong>Front-end razvoj:</strong> HTML, CSS, JavaScript, React, Node.js, TypeScript, postavljanje uporabniških vmesnikov.</p>
+    <p><strong>WordPress:</strong> Postavitev spletnih strani, prilagajanje, vtičniki in Elementor.</p>
+    <p><strong>Python:</strong> Podatkovna analiza z uporabo Pandas Matplotlib in Scikit-learn v Jupyter/Google Colab okolju.</p>
+    <p><strong>Orodja:</strong> GitHub, Firebase in Google Workspace (Forms, Sheets, Calendar API) za podporo aplikacijam in podatkom.</p>
+    <p><strong>Oblikovanje:</strong> Delo s Canvo in Figmo za oblikovanje vsebin in prototipov.</p>
+    <p><strong>Pisanje dokumentacije:</strong> Microsoft Word, Google Docs, strukturirano poročanje in priprava tehnične vsebine.</p>
+  </div>
+
+  <h2 style="margin-top: 2.5rem;">Mehke veščine</h2>
+  <div class="info">
+    <p><strong>Komunikacija in vodenje:</strong> Izkušnje kot predsednica študentskega kluba, kjer vodim ekipo in skrbim za koordinacijo delovanja.</p>
+    <p><strong>Organizacija dogodkov:</strong> Priprava, izvedba in evalvacija projektov ter timsko sodelovanje v različnih vlogah.</p>
+    <p><strong>Zanesljivost in natančnost:</strong> Skrb za kakovost opravljenega dela in doslednost v izvedbi nalog.</p>
+    <p><strong>Prilagodljivost in učenje:</strong> Hiter prevzem novih znanj, samoiniciativnost in iskanje rešitev pri izzivih.</p>
+  </div>
+</section>
+
+
+    <section class="projects">
+  <div class="container">
+    <h2><span>Spletne</span> strani</h2>
+    <p class="subtitle">Izbrane Wordpress spletne strani.</p>
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="/Innara.png" alt="WordPress projekt">
+        <div class="card-text">
+          <h3>Spletna trgovina INNARA</h3>
+          <a href="https://innara.si/" target="_blank" class="btn">Poglej stran →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/PrKerin.png" alt="WordPress projekt">
+        <div class="card-text">
+          <h3>Apartmaji Pr'Kerin</h3>
+          <a href="https://pr-kerin.si/" target="_blank" class="btn">Poglej stran →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Keramika.png" alt="WordPress projekt">
+        <div class="card-text">
+          <h3>Keramičarstvo Kerin</h3>
+          <a href="https://keramika-kerin.si/" target="_blank" class="btn">Poglej stran →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <h2><span>Analize</span> </h2>
+    <p class="subtitle">Analizo podatkov in napovedni modeli. Uporabljam Jupyter Notebook, Pandas, Matplotlib in knjižnice za strojno učenje (scikit-learn). Analizi narejeni v Google Colabu.</p>
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="/AnalizaPromet.png" alt="Collab projekt">
+        <img src="/AnalizaPromet2.png" alt="Collab projekt">
+        <div class="card-text">
+          <h3>Analiza prometnih nesreč 2022</h3>
+          <a href="https://github.com/larazupanc/Analiza-prometnih-nesre-2022" target="_blank" class="btn">Poglej več →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/AnalizaNogomet.png" alt="Collab projekt">
+        <div class="card-text">
+          <h3>Analiza nogometnih tekem in igralcev - sezona 2023</h3>
+          <a href="https://github.com/larazupanc/analizaNogometa"target="_blank" class="btn">Poglej več →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="container">
+    <h2><span>KlubPlus </span> spletna aplikacija</h2>
+    <p class="subtitle">Spletna aplikacija, razvita za notranje delovanje študentskega kluba. Omogoča beleženje uradnih ur, spremljanje projektov, sestankov, plačil članarin ter rezervacijo prostorov.</p>
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="/KlubPlus.png" alt="KlubPlus">
+        <div class="card-text">
+          <h3>KlubPlus</h3>
+          <a href="https://github.com/larazupanc/KlubPlus" target="_blank" class="btn">Poglej več →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer>
+      © 2025 Lara Zupanc. Vse pravice pridržane.
+    </footer>
+
+  </div>
+
 </body>
 </html>
