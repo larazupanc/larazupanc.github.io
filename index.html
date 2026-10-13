@@ -1,352 +1,372 @@
 <!DOCTYPE html>
-<html lang="sl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>O meni – Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0f0f23;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #1c1c3b;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      color: #ff7043;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    .about {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    .about-img {
-      flex: 1;
-      text-align: center;
-    }
-
-    .about-img img {
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      border: 5px solid #ff7043;
-      object-fit: cover;
-    }
-
-    .about-text {
-      flex: 2;
-    }
-
-    .about-text h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .about-text p {
-      color: #ccc;
-      margin-bottom: 1rem;
-    }
-
-    .info {
-      background-color: #1f1f3d;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-
-    .info p {
-      margin-bottom: 0.5rem;
-    }
-    .info a {
-  color: white;
-  text-decoration: none;
-}
-.info a:hover {
-  color: #ff7043;
-}
-
-
-    .info strong {
-      color: #ff7043;
-    }
-
-    .buttons {
-      margin-top: 1.5rem;
-    }
-
-    .buttons a {
-      display: inline-block;
-      padding: 0.7rem 1.2rem;
-      background: #ff7043;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      margin-right: 1rem;
-      transition: background 0.3s;
-    }
-
-    .buttons a:hover {
-      background: #ff5722;
-    }
-
-    .skills {
-      margin-top: 4rem;
-    }
-
-    .skills h2 {
-      color: #ff7043;
-      margin-bottom: 1rem;
-    }
-
-    .skill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .skill {
-      background-color: #1c1c3b;
-      padding: 0.7rem 1.2rem;
-      border-radius: 20px;
-      color: white;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      color: #aaa;
-      padding: 2rem;
-    }
-    .projects {
-  background-color: #0f0f23;
-  color: white;
-  text-align: center;
-}
-
-.projects h2 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.projects h2 span {
-  color: #ff7043;
-}
-
-.subtitle {
-  color: #ccc;
-  margin-bottom: 2rem;
-}
-
-.card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.card {
-  background-color: #1f1f3d;
-  border-radius: 16px;
-  overflow: hidden;
-  width: 280px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.card-text {
-  padding: 1rem;
-}
-
-.card-text h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.btn {
-  background-color: #ff7043;
-  color: white;
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 500;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #ff5722;
-}
-
-.see-more {
-  margin-top: 2rem;
-}
-
-
-    @media (max-width: 768px) {
-      .about {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .about-text {
-        text-align: left;
-      }
-        }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Lara Zupanc</h1>
-  </header>
-
-  <div class="container">
-
-    <section class="about">
-      <div class="about-img">
-        <img src="/ZupancLara_ProfilnaFoto.JPG" alt="Lara Zupanc">
-      </div>
-      <div class="about-text">
-        <h2>O meni</h2>
-        <p>Sem Lara Zupanc, diplomirana inženirka informatike in podatkovnih tehnologij (UN). Srednjo šolo sem obiskovala na Gimnaziji Lava, kjer se je tudi začelo moje zanimanje za informatiko.
-Veljam za komunikativno, odgovorno in pozitivno osebo, ki rada dela z ljudmi in v timu. V prostem času aktivno delujem v študentskem klubu Laški akademski klub, kjer že nekaj let soustvarjam dogajanje, skrbim za celotno delovanje društva, organizacijo projektov in sodelovanje z lokalno skupnostjo.
-
-Poleg tega se ukvarjam tudi z oblikovanjem spletnih strani. V prostem času predvsem v WordPressu, kjer lahko končni produkt predam stranki v nadaljno skrb.</p>
-        <div class="info">
-          <p><strong>Ime:</strong> Lara Zupanc</p>
-          <p><strong>Email:</strong><a href="mailto:zupanclara03@gmail.com"> zupanclara03@gmail.com</a></p>
-          <p><strong>Telefon:</strong> <a href="tel:+38631590680">+386 31 590 680</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/larazupanc" target="_blank" text-decoration: none;">github.com/larazupanc</a></p>
-          <p><strong>Izobrazba:</strong>  Diplomirana inženirka informatike in podatkovnih tehnologij (UN)</p>
-        </div>
-      </div>
-    </section>
-
-<section class="skills">
-  <h2>Tehnične veščine</h2>
-  <div class="info">
-    <p><strong>Programiranje:</strong> Python, JavaScript, React, Node.js, CSS, HTML, TypeScript, postavljanje uporabniških vmesnikov.</p>
-    <p><strong>Python:</strong> Podatkovna analiza z uporabo Pandas Matplotlib in Scikit-learn v Jupyter/Google Colab okolju, regresija, klasifikacija.</p>
-    <p><strong>Orodja:</strong> GitHub, Firebase in Google Workspace (Forms, Sheets, Calendar API) za podporo aplikacijam in podatkom.</p>
-        <p><strong>WordPress:</strong> Postavitev spletnih strani.</p>
-        <p><strong>Oblikovanje:</strong> Delo s Canvo in Figmo za oblikovanje vsebin in prototipov.</p>
-    <p><strong>Pisanje dokumentacije:</strong> Microsoft Word, Google Docs, strukturirano poročanje in priprava tehnične vsebine.</p>
-  </div>
-
-  <h2 style="margin-top: 2.5rem;">Druge veščine</h2>
-  <div class="info">
-    <p><strong>Komunikacija in vodenje:</strong> Izkušnje kot predsednica študentskega kluba, kjer vodim ekipo in skrbim za koordinacijo delovanja.</p>
-    <p><strong>Organizacija dogodkov:</strong> Priprava, izvedba in evalvacija projektov ter timsko sodelovanje v različnih vlogah.</p>
-    <p><strong>Zanesljivost in natančnost:</strong> Skrb za kakovost opravljenega dela in doslednost v izvedbi nalog.</p>
-    <p><strong>Prilagodljivost in učenje:</strong> Hiter prevzem novih znanj, samoiniciativnost in iskanje rešitev pri izzivih.</p>
-  </div>
+<html lang="sl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lara Zupanc – Portfolio</title>
+<meta name="description" content="Lara Zupanc – inženirka informatike, spletna razvijalka in koordinatorka projektov. / Informatics engineer, web developer and project coordinator.">
+<meta name="theme-color" content="#0f212b">
+<meta property="og:title" content="Lara Zupanc – Portfolio">
+<meta property="og:description" content="Spletni razvoj, aplikacije in koordinacija projektov.">
+<meta property="og:image" content="img/lara.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📁%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;800&family=Roboto:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Caveat:wght@600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f212b;--ink:#eaf2f5;--navy:#1f4e63;--sky:#a9cfdd;--mist:#d7e6ec;--gold:#e0b96a;--blush:#f2cdbd;--steel:#6fa8c0;--dk:#12303d;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 'Roboto',sans-serif;overflow-x:hidden;background-image:linear-gradient(rgba(169,207,221,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(169,207,221,.05) 1px,transparent 1px);background-size:44px 44px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.mono{font-family:'JetBrains Mono',monospace}
+/* nav */
+.nav{position:sticky;top:0;z-index:40;background:rgba(15,33,43,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(169,207,221,.15)}
+.nav .wrap{display:flex;align-items:center;gap:14px;padding-top:10px;padding-bottom:10px}
+.logo{font:700 15px 'JetBrains Mono';color:var(--gold);margin-right:auto;white-space:nowrap}
+.nav nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav nav button{all:unset;cursor:pointer;padding:6px 13px;border-radius:16px 16px 0 0;font:500 13px 'Raleway';color:var(--ink);transition:background .25s,color .25s,transform .25s;white-space:nowrap}
+.nav nav button:hover,.nav nav button:focus-visible{background:var(--c);color:var(--dk);transform:translateY(-3px)}
+.lang{display:flex;gap:4px}
+.lang button{font:700 12px 'JetBrains Mono';background:none;color:var(--ink);border:1.5px solid var(--sky);border-radius:14px;padding:4px 11px;cursor:pointer;transition:.25s}
+.lang button.on,.lang button:hover{background:var(--gold);border-color:var(--gold);color:var(--dk)}
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;min-height:calc(100vh - 54px);padding:36px 0 60px;position:relative}
+.hero::before{content:"";position:absolute;inset:-60px -40px;background:radial-gradient(420px circle at var(--mx,70%) var(--my,40%),rgba(224,185,106,.14),transparent 70%);pointer-events:none}
+.kick{color:var(--gold);font-size:14px;margin:0 0 6px}
+h1{font:200 clamp(44px,8.4vw,92px)/1 'Raleway',sans-serif;letter-spacing:.14em;margin:0 0 16px}
+h1 span{display:inline-block;transition:transform .35s cubic-bezier(.3,1.8,.5,1),color .3s,font-weight .3s}
+h1 span:hover{transform:translateY(-14px) rotate(-6deg);color:var(--gold);font-weight:800}
+.role{font:500 clamp(18px,2.6vw,24px) 'Raleway';color:var(--sky);min-height:34px;margin:0 0 20px}
+.cur{display:inline-block;width:3px;height:1.1em;background:var(--gold);margin-left:4px;vertical-align:-.18em;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+.code{background:#0a1820;border:1px solid rgba(169,207,221,.25);border-radius:10px;font:400 13.5px/1.7 'JetBrains Mono';padding:0 0 14px;max-width:440px;box-shadow:0 14px 30px rgba(0,0,0,.4);transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
+.code:hover{transform:rotate(-1.2deg) translateY(-4px)}
+.code .bar{display:flex;gap:6px;padding:9px 12px;background:rgba(169,207,221,.1);border-radius:10px 10px 0 0;margin-bottom:10px;align-items:center;color:#7fa0ae;font-size:12px}
+.code .bar i{width:10px;height:10px;border-radius:50%;background:#e57a6b}.code .bar i:nth-child(2){background:var(--gold)}.code .bar i:nth-child(3){background:#7fd1a0}
+.code .ln{padding:0 16px;opacity:0;transform:translateX(-12px);transition:.5s}
+.code .ln.on{opacity:1;transform:none}
+.k{color:#c89cf0}.s{color:#9fe0b0}.c{color:#6c8995}.p{color:var(--gold)}
+.hbtn{font:800 14px 'Raleway';background:var(--gold);color:var(--dk);border:0;border-radius:6px;padding:11px 20px;cursor:pointer;margin-top:22px;box-shadow:4px 4px 0 var(--steel);transition:transform .25s,box-shadow .25s}
+.hbtn:hover{transform:translate(-2px,-2px) rotate(-1.5deg);box-shadow:7px 7px 0 var(--steel)}
+.stage{position:relative;display:grid;place-items:center;min-height:400px}
+.orbit{position:absolute;width:min(380px,92vw);height:min(380px,92vw);animation:spin 46s linear infinite;border:1px dashed rgba(169,207,221,.3);border-radius:50%}
+.oc{position:absolute;top:50%;left:50%;transform:rotate(var(--a)) translateX(var(--r)) rotate(calc(var(--a) * -1))}
+.oc span{display:block;translate:-50% -50%;background:var(--navy);color:var(--sky);font:700 12px 'JetBrains Mono';padding:6px 12px;border-radius:20px;border:1px solid var(--sky);animation:spin 46s linear infinite reverse;transition:background .2s,color .2s;white-space:nowrap}
+.oc span:hover{background:var(--gold);color:var(--dk);border-color:var(--gold)}
+.orbit:hover,.orbit:hover .oc span{animation-play-state:paused}
+@keyframes spin{to{transform:rotate(360deg)}}
+.photo{position:relative;width:min(240px,54vw);aspect-ratio:1;border-radius:50%;border:9px solid var(--sky);overflow:hidden;cursor:pointer;background:var(--navy) url(img/lara.jpg) 50% 22%/cover;box-shadow:0 0 0 6px rgba(169,207,221,.15),0 20px 40px rgba(0,0,0,.45);transition:transform .15s ease-out,box-shadow .3s}
+.photo:hover{box-shadow:0 0 0 14px rgba(224,185,106,.3),0 24px 44px rgba(0,0,0,.5)}
+.photo:focus-visible{outline:3px solid var(--gold);outline-offset:8px}
+.photo .tip{position:absolute;inset:auto 0 0;background:rgba(15,33,43,.8);font-size:12px;text-align:center;padding:5px 0 12px;transform:translateY(100%);transition:transform .3s}
+.photo:hover .tip{transform:none}
+.sticker{position:absolute;z-index:3;right:4%;top:11%;rotate:7deg;background:var(--blush);color:var(--dk);font:600 26px 'Caveat',cursive;padding:4px 18px 6px;box-shadow:0 8px 16px rgba(0,0,0,.35);pointer-events:none}
+.sticker::before{content:"";position:absolute;top:-10px;left:50%;width:54px;height:18px;margin-left:-27px;background:rgba(224,185,106,.85);rotate:-4deg}
+.bl{position:fixed;bottom:-130px;width:46px;height:58px;border-radius:50% 50% 48% 48%;z-index:60;pointer-events:none;animation:rise var(--t) ease-in forwards;box-shadow:inset -8px -8px 14px rgba(0,0,0,.25),inset 6px 6px 10px rgba(255,255,255,.35)}
+.bl::after{content:"";position:absolute;left:50%;top:100%;width:1px;height:50px;background:rgba(255,255,255,.5)}
+@keyframes rise{to{transform:translate(var(--dx),-125vh) rotate(var(--rt))}}
+/* drawer */
+.drawer{padding:40px 0 70px}
+.drawer h2.dh{font:200 clamp(26px,4vw,38px) 'Raleway';letter-spacing:.2em;margin:0 0 6px}
+.folder{position:relative;margin-top:52px;background:var(--c);color:var(--dk);border-radius:0 24px 0 0;box-shadow:inset 0 -6px 0 rgba(0,0,0,.1),0 12px 26px rgba(0,0,0,.35);translate:0 var(--ty,0px);rotate:var(--rot,0deg);transition:translate .5s cubic-bezier(.3,1.6,.5,1),rotate .5s cubic-bezier(.3,1.6,.5,1);scroll-margin-top:80px}
+.folder.pre{opacity:0;transform:translateY(-90vh)}
+.folder.fall{animation:drop 1.15s var(--del) both}
+@keyframes drop{0%{transform:translateY(-90vh) rotate(-7deg);opacity:0}12%{opacity:1}58%{transform:translateY(0) rotate(0)}72%{transform:translateY(-26px)}86%{transform:translateY(0)}93%{transform:translateY(-7px)}100%{transform:none}}
+.tab{position:absolute;top:-38px;left:calc(var(--i) * 13%);background:var(--c);padding:8px 24px 5px;border-radius:16px 16px 0 0;font:800 15px 'Raleway';pointer-events:none;transition:transform .35s cubic-bezier(.3,1.8,.5,1)}
+.tab::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:4px;background:var(--c)}
+.folder.hov .tab,.folder.open .tab{transform:translateY(-8px)}
+.fh{all:unset;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;width:100%;padding:22px 26px;cursor:pointer;gap:12px}
+.fh:focus-visible{outline:3px solid var(--dk);outline-offset:-6px}
+.fh em{font:800 clamp(24px,4.6vw,40px)/1.05 'Raleway';font-style:normal}
+.fh small{display:block;font:400 13px 'JetBrains Mono';opacity:.7;margin-top:4px}
+.pl{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--dk);color:var(--c);font:300 28px 'Raleway';transition:transform .55s cubic-bezier(.3,1.6,.5,1)}
+.folder.open .pl{transform:rotate(135deg)}
+.body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .7s cubic-bezier(.2,.8,.2,1)}
+.folder.open .body{grid-template-rows:1fr}
+.bi{overflow:hidden;min-height:0}
+.sheet{background:#fbf9f4;margin:2px 22px 26px;padding:28px;border-radius:4px;box-shadow:0 8px 20px rgba(0,0,0,.22);transform:translateY(90px) rotate(-1.6deg);opacity:0;transition:transform .8s cubic-bezier(.2,1.2,.3,1) .12s,opacity .5s .12s}
+.folder.open .sheet{transform:none;opacity:1}
+.sheet h4{font:800 15px 'Raleway';margin:16px 0 6px;color:var(--navy)}
+.sheet p{margin:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px 30px}
+.two ul{margin:4px 0;padding-left:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
+.chip{background:var(--navy);color:var(--sky);padding:5px 13px;border-radius:30px;font:700 12.5px 'JetBrains Mono';transition:transform .25s cubic-bezier(.3,1.8,.5,1),background .2s,color .2s}
+.chip:hover{transform:translateY(-6px) rotate(var(--rr,4deg)) scale(1.12);background:var(--gold);color:var(--dk)}
+/* projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 34px}
+.fb{font:700 13px 'JetBrains Mono';background:transparent;color:var(--navy);border:2px solid var(--navy);border-radius:20px;padding:6px 15px;cursor:pointer;transition:transform .3s cubic-bezier(.3,1.8,.5,1),background .2s,color .2s}
+.fb:hover{transform:translateY(-3px) rotate(-2deg)}
+.fb.on{background:var(--navy);color:var(--sky)}
+.fb:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.cases{display:grid;gap:64px}
+.case{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:38px;align-items:center}
+.case.rev .fig{order:2}
+.case.off{display:none}
+.case.pop{animation:pop .55s cubic-bezier(.3,1.4,.5,1) both}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.97)}}
+.case.sw .vp img{animation:swap .45s both}
+@keyframes swap{from{opacity:0;transform:scale(1.03)}}
+.fig{position:relative;margin:0;rotate:-1deg;transition:rotate .4s}
+.case.rev .fig{rotate:1deg}
+.fig:hover{rotate:0deg}
+.fig::before{content:"";position:absolute;top:-12px;left:50%;width:96px;height:26px;margin-left:-48px;background:rgba(224,185,106,.82);rotate:-2.5deg;z-index:3;box-shadow:0 1px 3px rgba(0,0,0,.15);pointer-events:none}
+.shot{position:relative;display:block;border-radius:10px;overflow:hidden;background:#0a1820;box-shadow:0 14px 30px rgba(0,0,0,.3),0 0 0 1px rgba(18,48,61,.18);cursor:zoom-in;transition:transform .25s ease-out,box-shadow .3s;will-change:transform}
+.shot.vid{cursor:default}
+.shot:focus-visible{outline:3px solid var(--navy);outline-offset:4px}
+.shot::after{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.16),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.shot:hover::after{opacity:1}
+.sb{display:flex;align-items:center;gap:6px;padding:8px 12px;background:var(--dk);color:#8fb3c2;font:400 12px 'JetBrains Mono'}
+.sb i{width:9px;height:9px;border-radius:50%;background:#e57a6b;flex:none}.sb i:nth-child(2){background:var(--gold)}.sb i:nth-child(3){background:#7fd1a0}
+.sb span{margin-left:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vp{position:relative;overflow:hidden}
+.vp img{display:block;width:100%;height:100%;object-position:top;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.shot:hover .vp img{transform:scale(1.04)}
+.vp iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.zm{position:absolute;right:10px;bottom:10px;font:700 12px 'JetBrains Mono';background:var(--gold);color:var(--dk);padding:4px 11px;border-radius:14px;opacity:0;translate:0 8px;transition:opacity .25s,translate .3s cubic-bezier(.3,1.6,.5,1);pointer-events:none}
+.shot:hover .zm,.shot:focus-visible .zm{opacity:1;translate:0 0}
+.play{all:unset;cursor:pointer;position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:10px;background:linear-gradient(transparent 35%,rgba(10,24,32,.7));color:#fff}
+.play span{display:grid;place-items:center;width:74px;height:74px;border-radius:50%;background:var(--gold);color:var(--dk);font-size:26px;padding-left:5px;box-shadow:0 0 0 0 rgba(224,185,106,.6);animation:pulse 2.4s infinite;transition:transform .3s cubic-bezier(.3,1.8,.5,1)}
+@keyframes pulse{70%{box-shadow:0 0 0 22px rgba(224,185,106,0)}100%{box-shadow:0 0 0 0 rgba(224,185,106,0)}}
+.play em{font:700 14px 'JetBrains Mono';font-style:normal;text-shadow:0 1px 6px rgba(0,0,0,.7)}
+.play:hover span{transform:scale(1.12)}
+.play:focus-visible{outline:3px solid var(--gold);outline-offset:-6px}
+.thumbs{display:flex;gap:10px;margin-top:16px}
+.th{all:unset;box-sizing:border-box;cursor:pointer;flex:1;min-width:0;border-radius:6px;overflow:hidden;border:2px solid transparent;opacity:.62;background:var(--dk);transition:opacity .25s,transform .3s cubic-bezier(.3,1.8,.5,1),border-color .25s}
+.th img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}
+.th span{display:block;padding:4px 8px;font:700 11.5px 'JetBrains Mono';color:var(--sky);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.th:hover{opacity:1;transform:translateY(-4px)}
+.th.on{opacity:1;border-color:var(--gold)}
+.th:focus-visible{outline:3px solid var(--navy);outline-offset:2px}
+.cc{font:600 22px 'Caveat',cursive;color:var(--navy);margin-top:12px;text-align:center;line-height:1.2}
+.txt .kind{font:400 13px 'JetBrains Mono';color:#8a5a00}
+.txt h3{font:800 clamp(26px,3.4vw,36px)/1.05 'Raleway';margin:4px 0 14px;color:var(--dk)}
+.txt p{margin:0 0 12px;max-width:62ch}
+.note{background:#f1ead8;border-left:4px solid var(--c);padding:10px 14px;margin:6px 0 14px;font-size:14.5px;border-radius:0 6px 6px 0}
+.note b{display:block;font:800 14px 'Raleway';color:var(--navy);margin-bottom:2px}
+.pts{list-style:none;margin:8px 0 12px;padding:0}
+.pts li{position:relative;padding-left:24px;margin-bottom:7px;font-size:14.5px}
+.pts li::before{content:"";position:absolute;left:3px;top:.5em;width:9px;height:9px;border-radius:2px;background:var(--c);rotate:45deg;box-shadow:0 0 0 2px var(--dk)}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.lk{display:inline-flex;align-items:center;text-decoration:none;font:700 13px 'JetBrains Mono';color:var(--sky);background:var(--navy);padding:9px 15px;border-radius:7px;box-shadow:3px 3px 0 var(--c);transition:transform .25s cubic-bezier(.3,1.8,.5,1),box-shadow .25s}
+.lk:hover,.lk:focus-visible{transform:translate(-2px,-2px) rotate(-1deg);box-shadow:6px 6px 0 var(--c)}
+.ghs{display:block;margin-top:56px;background:#0a1820;color:var(--sky);text-decoration:none;border-radius:10px;padding:20px 24px;font:400 15px/1.8 'JetBrains Mono';box-shadow:0 10px 24px rgba(0,0,0,.3);transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.ghs:hover,.ghs:focus-visible{transform:rotate(-.8deg) translateY(-4px)}
+.ghs b{color:var(--gold)}
+/* about: clipping */
+.clip{display:block;position:relative;margin:30px 0 8px 6px;max-width:560px;padding:24px 28px 22px;background:#f3ecd9 linear-gradient(135deg,rgba(255,255,255,.5),transparent 55%);color:#2b2a26;text-decoration:none;rotate:-1.2deg;box-shadow:0 10px 22px rgba(0,0,0,.25);transition:rotate .4s cubic-bezier(.3,1.6,.5,1),translate .4s cubic-bezier(.3,1.6,.5,1),scale .4s}
+.clip::before{content:"";position:absolute;top:-16px;right:30px;width:16px;height:50px;border:3px solid #8aa0aa;border-radius:9px}
+.clip:hover,.clip:focus-visible{rotate:.5deg;translate:0 -6px;scale:1.02}
+.clip:focus-visible{outline:3px solid var(--navy);outline-offset:4px}
+.clip small{font:400 12px 'JetBrains Mono';color:#7a6a45}
+.clip h3{font:700 clamp(19px,2.6vw,25px)/1.25 'Libre Baskerville',Georgia,serif;margin:6px 0 10px}
+.clip p{font:400 14.5px/1.6 'Libre Baskerville',Georgia,serif;margin:0}
+.clip .rd{display:inline-block;margin-top:14px;font:700 13px 'JetBrains Mono';color:var(--navy);border-bottom:2px solid var(--gold)}
+/* experience: ticket */
+.idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;padding-top:10px}
+.ic{background:#fff8ea repeating-linear-gradient(transparent 0 27px,#d6e3f0 27px 28px);padding:24px 18px 14px;border-radius:3px;position:relative;box-shadow:0 6px 14px rgba(0,0,0,.18);transition:transform .35s cubic-bezier(.3,1.6,.5,1),box-shadow .3s}
+.ic::before{content:"";position:absolute;top:-13px;left:20px;width:15px;height:42px;border:3px solid #8aa0aa;border-radius:9px}
+.ic:hover{transform:translate(8px,-10px) rotate(1.6deg);box-shadow:-10px 18px 22px rgba(0,0,0,.25)}
+.ic small{font:600 20px 'Caveat';color:#a8651a}
+.ic h3{font:800 16px/1.25 'Raleway';margin:2px 0 6px;color:var(--navy)}
+.ic ul{margin:6px 0 0;padding-left:18px;font-size:13.5px}
+.ic li{margin-bottom:5px;transition:transform .2s}.ic li:hover{transform:translateX(6px)}
+.ticket{display:grid;grid-template-columns:140px minmax(0,1fr);margin:42px 0 6px;max-width:680px;text-decoration:none;color:var(--dk);filter:drop-shadow(0 8px 12px rgba(0,0,0,.25))}
+.ticket:focus-visible{outline:3px solid var(--navy);outline-offset:6px}
+.stub,.tk{transition:transform .45s cubic-bezier(.3,1.6,.5,1)}
+.stub{display:grid;place-content:center;text-align:center;padding:16px 10px;background:radial-gradient(circle at 100% 0,transparent 11px,var(--gold) 11.5px) top/100% 51% no-repeat,radial-gradient(circle at 100% 100%,transparent 11px,var(--gold) 11.5px) bottom/100% 51% no-repeat;font:800 30px/1 'Raleway'}
+.stub small{display:block;font:700 12px 'JetBrains Mono';margin-top:8px}
+.tk{padding:18px 24px 18px 26px;background:radial-gradient(circle at 0 0,transparent 11px,#fff8ea 11.5px) top/100% 51% no-repeat,radial-gradient(circle at 0 100%,transparent 11px,#fff8ea 11.5px) bottom/100% 51% no-repeat;border-left:2px dashed rgba(18,48,61,.4)}
+.tk h3{font:800 20px/1.2 'Raleway';margin:0 0 6px;color:var(--navy)}
+.tk p{font-size:14.5px;margin:0 0 8px}
+.tk .rd{font:700 13px 'JetBrains Mono';color:var(--navy);border-bottom:2px solid var(--gold)}
+.ticket:hover .stub,.ticket:focus-visible .stub{transform:translateX(-9px) rotate(-3deg)}
+.ticket:hover .tk,.ticket:focus-visible .tk{transform:translateX(9px) rotate(1deg)}
+.tl{border-left:4px solid var(--navy);margin:12px 0 0 8px}
+.tl div{padding:0 0 22px 24px;position:relative;transition:transform .3s}
+.tl div::before{content:"";position:absolute;left:-12px;top:4px;width:20px;height:20px;border-radius:50%;background:var(--navy);border:4px solid var(--gold);transition:transform .3s}
+.tl div:hover{transform:translateX(10px)}.tl div:hover::before{transform:scale(1.5)}
+.tl b{font:800 17px 'Raleway'}.tl small{font:400 13px 'JetBrains Mono';color:#8a5a00}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.ct a,.ct button{all:unset;box-sizing:border-box;cursor:pointer;background:var(--navy);color:var(--sky);padding:18px;border-radius:6px;font:700 15px 'JetBrains Mono';display:block;transition:transform .3s cubic-bezier(.3,1.8,.5,1);overflow-wrap:anywhere}
+.ct a:hover,.ct button:hover,.ct a:focus-visible,.ct button:focus-visible{transform:rotate(-2deg) scale(1.05);background:var(--dk)}
+.ct small{display:block;font-weight:400;opacity:.7;margin-bottom:2px}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:80;background:rgba(6,14,19,.93);display:none;place-items:center;align-content:center;gap:14px;padding:24px;cursor:zoom-out}
+.lb.on{display:grid}
+.lb img{max-width:min(96vw,1400px);max-height:80vh;border-radius:8px;box-shadow:0 20px 50px rgba(0,0,0,.6);background:#fff}
+.lb p{margin:0;font:600 24px 'Caveat',cursive;color:var(--gold);text-align:center}
+.lb .x{all:unset;position:absolute;top:14px;right:18px;cursor:pointer;font:300 40px/1 'Raleway';color:var(--ink);width:48px;height:48px;text-align:center;border-radius:50%}
+.lb .x:hover,.lb .x:focus-visible{background:rgba(255,255,255,.12)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--gold);color:var(--dk);padding:10px 22px;border-radius:30px;font-weight:700;transition:transform .4s cubic-bezier(.3,1.6,.5,1);z-index:90}
+.toast.on{transform:translate(-50%,0)}
+footer{text-align:center;padding:10px 0 46px;opacity:.6;font:400 13px 'JetBrains Mono'}
+@media(max-width:860px){.case{grid-template-columns:1fr;gap:26px}.case.rev .fig{order:0}}
+@media(max-width:780px){.hero{grid-template-columns:1fr;min-height:0}.stage{min-height:360px}.two{grid-template-columns:1fr}.sheet{margin:2px 10px 20px;padding:18px}.fh{padding:18px 16px}.tab{left:calc(var(--i) * 8%)}.oc{--r:140px}.th span{display:none}.ticket{grid-template-columns:100px minmax(0,1fr)}.stub{font-size:24px}.cases{gap:52px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01s!important}.folder.pre{opacity:1;transform:none}}
+</style></head><body>
+<div class="nav"><div class="wrap"><div class="logo">&lt;LZ /&gt;</div><nav id="nv"></nav><div class="lang"><button data-l="sl">SL</button><button data-l="en">EN</button></div></div></div>
+<div class="wrap">
+<section class="hero" id="hero">
+<div>
+<p class="kick mono" id="kk"></p>
+<h1 id="nm" aria-label="Lara Zupanc"></h1>
+<p class="role"><span id="tw"></span><i class="cur"></i></p>
+<div class="code"><div class="bar"><i></i><i></i><i></i>&nbsp;lara.js</div><div id="cd"></div></div>
+<button class="hbtn" id="go"></button>
+</div>
+<div class="stage" id="stage">
+<div class="orbit" id="orb"></div>
+<div class="photo" id="ph" role="button" tabindex="0" aria-label="🎈"><div class="tip" id="tp"></div></div>
+<div class="sticker" id="st"></div>
+</div>
 </section>
+<section class="drawer" id="drawer"><h2 class="dh" id="dh"></h2><div id="fl"></div></section>
+<footer id="ft"></footer>
+</div>
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button class="x" aria-label="×">×</button><img alt=""><p></p></div>
+<div class="toast" id="toast"></div>
+<script>
+let L='sl';try{L=localStorage.getItem('lang')||'sl'}catch(e){}
+const $=s=>document.querySelector(s),FL=$('#fl'),t=a=>a[L=='sl'?0:1],tx=v=>typeof v=='string'?v:t(v),esc=s=>String(s).replace(/"/g,'&quot;');
+const SEL={};let FILT='all';
+const CATS=[['all',['Vse','All']],['app',['Aplikacije','Apps']],['web',['Spletne strani','Websites']],['data',['Analiza podatkov','Data analysis']]];
+/* ---------- projects ---------- */
+const P=[
+{k:'zagility',cat:'app',c:'#e0b96a',n:'ZAgility',ratio:1.59,video:'XNlTHFuQjGc',
+ kind:['Namizna aplikacija za agility tekmovanja','Desktop app for agility competitions'],
+ d:[['ZAgility je namizna aplikacija za merjenje časa in prikaz rezultatov na agility tekmovanjih, pasjem športu. Na tekmi teče na prenosniku, ob njem pa je merilna naprava, ki kaže isti čas kot aplikacija.','ZAgility is a desktop app for timing and showing results at agility competitions, a dog sport. At an event it runs on a laptop, with a timing device next to it that shows the same time as the app.'],
+    ['Projekt zajema uporabniški vmesnik, delo s podatkovno bazo in povezovanje različnih delov aplikacije v delujočo celoto. Klikni na sliko in poglej posnetek.','The project covers the user interface, database work and connecting the different parts of the app into one working whole. Click the picture to watch the video.']],
+ pts:[['Zaslon za merjenje časa z živim prikazom in seznamom prejšnjih rezultatov','A timing screen with a live display and a list of previous results'],['Shranjevanje rezultatov v podatkovno bazo SQLite','Results stored in a SQLite database'],['Povezovanje vmesnika, baze in merjenja časa v eno celoto','Connecting the interface, the database and the timing into one whole'],['Preizkušena v živo na tekmovanju','Tested live at a competition']],
+ te:'Electron · React · JavaScript · SQLite · Python',
+ links:[,{u:'https://www.facebook.com/p/Z-Agility-61556035748584/',l:['Facebook stran','Facebook page']},{u:'https://www.youtube.com/watch?v=XNlTHFuQjGc',l:['Video na YouTubu','Video on YouTube']}],
+ items:[{img:'img/zagility.webp',alt:['Prenosnik z aplikacijo ZAgility, ki kaže čas 39:29 s, ob njem merilna naprava','Laptop running ZAgility showing 39:29 s, with a timing device beside it'],cap:['Aplikacija na tekmi, merilna naprava kaže isti čas','The app at a competition, the timing device shows the same time']}]},
+{k:'klubplus',cat:'app',c:'#a9cfdd',n:'KlubPlus',ratio:2.15,
+ kind:['Aplikacija za vodenje društva','App for running a club'],
+ d:[['KlubPlus je digitalna rešitev za vodenje društva, zrasla iz resničnih potreb Laškega akademskega kluba. Namesto razpršenih tabel in sporočil je vse na enem mestu.','KlubPlus is a digital tool for running a club, grown out of the real needs of the Laški akademski klub. Instead of scattered spreadsheets and messages, everything lives in one place.'],
+    ['Posnetek prikazuje izdajanje kuponov: člani ugodnosti uveljavljajo pri lokalnih partnerjih, od gostinskih lokalov do kartinga.','The screenshot shows coupon issuing: members redeem benefits at local partners, from restaurants to karting.']],
+ pts:[['Moduli za uradne ure, sestanke, projekte, koledar in rezervacijo prostora','Modules for office hours, meetings, projects, a calendar and room booking'],['Mesečna izplačila in ugodnosti članov','Monthly payouts and member benefits'],['Poenostavlja administrativna opravila društva','It simplifies the club\'s administrative tasks']],
+ te:'Dart · React · JavaScript · Firebase · Node.js',
+ links:[{u:'https://github.com/larazupanc/KlubPlus',l:'GitHub'}],
+ items:[{img:'img/klubplus.webp',alt:['Aplikacija KlubPlus: pogovorno okno za izdajo kuponov lokalnih partnerjev','KlubPlus app: dialog for issuing coupons from local partners'],cap:['Izdajanje kuponov za ugodnosti članov','Issuing coupons for member benefits']}]},
+{k:'promoviva',cat:'web',c:'#f2cdbd',n:'PromoViva',ratio:2.1,
+ kind:['Spletna trgovina (Shopify)','Online shop (Shopify)'],
+ d:[[
+'PromoViva je spletna trgovina s promocijskimi in poslovnimi darili, kjer lahko kupec neposredno na spletni strani prilagodi videz izdelka in uredi njegovo personalizacijo pred oddajo naročila.',
+'PromoViva is an online shop for promotional and business gifts, where customers can customise a product’s appearance and personalise it directly on the website before placing an order.'
+]], pts:[['Struktura trgovine, katalog in kategorije izdelkov','Store structure, catalogue and product categories'],['Prilagoditev videza in uporabniške izkušnje','Tailored look and user experience'],['Načrtovanje postopka naročanja in povpraševanja','A planned ordering and enquiry flow']],
+te:'Shopify',
+links:[{u:'https://promoviva.si',l:'Spletna trgovina ↗'}], items:[{img:'img/promoviva.webp',alt:['Domača stran spletne trgovine PromoViva s posebno ponudbo in kategorijami izdelkov','Home page of the PromoViva shop with a special offer and product categories'],cap:['Domača stran trgovine PromoViva','The PromoViva shop home page']}]},
+{k:'web',cat:'web',c:'#6fa8c0',n:['Spletne strani in trgovine','Websites and shops'],ratio:2.2,
+ kind:['Izdelava in vzdrževanje','Building and maintaining'],
+ d:[['Za različne stranke sem izdelala spletne strani in trgovine ter jih vzdržujem, od modne znamke do apartmajev in keramičarstva. Vsaka ima svoj ton in občinstvo, skupno pa jim je, da morajo obiskovalcu hitro povedati, kaj ponujajo, in ga pripeljati do kontakta ali nakupa.','For different clients I have built websites and online shops and I keep them up to date, from a fashion brand to apartments and a tile company. Each has its own tone and audience, but all of them have to tell a visitor quickly what is on offer and lead them to a contact or a purchase.']],
+ pts:[['Izdelava v WordPressu in Shopifyju','Built with WordPress and Shopify'],['Vzdrževanje in posodabljanje vsebin','Maintenance and content updates'],['Tudi za Športno društvo ŠKIS in Laški akademski klub','Also for the sports club ŠKIS and the Laški akademski klub']],
+ te:'WordPress · Shopify',links:[],
+ items:[
+ {n:'Innara',img:'img/innara.webp',alt:['Domača stran modne znamke Innara s sloganom Zasij v svoji resnični luči','Home page of the fashion brand Innara with the line Zasij v svoji resnični luči'],cap:['Innara, modna znamka s spletno trgovino','Innara, a fashion brand with an online shop'],d:['Trgovina in predstavitev znamke s sporočilom Zasij v svoji resnični luči. Domača stran, trgovina, zgodba znamke in kontakt, s seznamom želja in košarico.','A shop and brand presentation with the message “Zasij v svoji resnični luči” (shine in your true light). Home, shop, brand story and contact, with a wishlist and a cart.']},
+ {n:'Pr\' Kerin',img:'img/prkerin.webp',alt:['Domača stran Apartmajev Pr\' Kerin z gumbom za rezervacijo','Home page of Apartmaji Pr\' Kerin with a booking button'],cap:['Apartmaji Pr\' Kerin, prenočišča v Laškem','Apartmaji Pr\' Kerin, accommodation in Laško'],d:['Predstavitvena stran za prenočišča v Laškem: pregled apartmajev, aktivnosti v okolici in kontakt, z izstopajočim gumbom za rezervacijo.','A presentation site for accommodation in Laško: the apartments, activities nearby and contact, with a prominent booking button.']},
+ {n:'Keramičarstvo Kerin',img:'img/keramika.webp',alt:['Stran Keramičarstva Kerin, Od ideje do kvalitetne izvedbe z njihovo predstavitvijo in katalogi','Page of Keramičarstvo Kerin with the line Od ideje do kvalitetne izvedbe'],cap:['Keramičarstvo Kerin','Keramičarstvo Kerin'],d:['Stran Keramičarstva Kerin, Od ideje do kvalitetne izvedbe: salon, keramika, reference, prenova in kontakt na enem mestu.','A site built around the line “Od ideje do kvalitetne izvedbe” (from idea to quality execution): showroom, ceramics, references, renovation and contact in one place.']}]},
+{k:'promet',cat:'data',c:'#d7e6ec',n:['Analiza prometnih nesreč','Traffic accident analysis'],ratio:2.6,fit:'contain',bg:'#fff',
+ kind:['Analiza podatkov v Pythonu','Data analysis in Python'],
+ d:[['Raziskovanje podatkov o prometnih nesrečah s Pythonom: kaj se zgodi, komu in kje. Zanimalo me je, ali spol vpliva na tip nesreče in na katerih cestnih odsekih je nesreč največ.','Exploring traffic accident data with Python: what happens, to whom and where. I looked at whether gender relates to the type of accident and which road sections see the most accidents.']],
+ pts:[['Obdelava podatkov s knjižnico pandas','Data processing with pandas'],['Vizualizacije z Matplotlibom','Visualisations with Matplotlib'],['Od vprašanja do grafa, ki nanj odgovori','From a question to a chart that answers it']],
+ te:'Python · pandas · Matplotlib', links:[{u:'https://github.com/larazupanc/Analiza-prometnih-nesre-2022',l:'GitHub'}],
 
-
-    <section class="projects">
-  <div class="container">
-    <h2><span>KlubPlus </span> spletna aplikacija</h2>
-    <p class="subtitle">Spletna aplikacija, razvita za notranje delovanje študentskega kluba. Omogoča beleženje uradnih ur, spremljanje projektov, sestankov, plačil članarin ter rezervacijo prostorov.</p>
-    <div class="card-wrapper">
-      <div class="card">
-        <img src="/KlubPlus.png" alt="KlubPlus">
-        <div class="card-text">
-          <h3>KlubPlus</h3>
-          <a href="https://github.com/larazupanc/KlubPlus" target="_blank" class="btn">Poglej več →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="container">
-    <h2><span>Analize</span> </h2>
-    <p class="subtitle">Analizo podatkov in napovedni modeli. Uporabljam Jupyter Notebook, Pandas, Matplotlib in knjižnice za strojno učenje (scikit-learn). Analizi narejeni v Google Colabu.</p>
-    <div class="card-wrapper">
-      <div class="card">
-        <img src="/AnalizaPromet.png" alt="Collab projekt">
-        <img src="/AnalizaPromet2.png" alt="Collab projekt">
-        <div class="card-text">
-          <h3>Analiza prometnih nesreč 2022</h3>
-          <a href="https://github.com/larazupanc/Analiza-prometnih-nesre-2022" target="_blank" class="btn">Poglej več →</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/AnalizaNogomet.png" alt="Collab projekt">
-        <div class="card-text">
-          <h3>Analiza nogometnih tekem in igralcev - sezona 2023</h3>
-          <a href="https://github.com/larazupanc/analizaNogometa"target="_blank" class="btn">Poglej več →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-     
-   <div class="container">
-    <h2><span>Spletne</span> strani</h2>
-    <p class="subtitle">Izbrane Wordpress spletne strani.</p>
-    <div class="card-wrapper">
-      <div class="card">
-        <img src="/Innara.png" alt="WordPress projekt">
-        <div class="card-text">
-          <h3>Spletna trgovina INNARA</h3>
-          <a href="https://innara.si/" target="_blank" class="btn">Poglej stran →</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/PrKerin.png" alt="WordPress projekt">
-        <div class="card-text">
-          <h3>Apartmaji Pr'Kerin</h3>
-          <a href="https://pr-kerin.si/" target="_blank" class="btn">Poglej stran →</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/Keramika.png" alt="WordPress projekt">
-        <div class="card-text">
-          <h3>Keramičarstvo Kerin</h3>
-          <a href="https://keramika-kerin.si/" target="_blank" class="btn">Poglej stran →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <footer>
-      © 2025 Lara Zupanc. Vse pravice pridržane.
-    </footer>
-
-  </div>
-
-</body>
-</html>
+ items:[
+ {n:['Spol in tip nesreče','Gender and accident type'],img:'img/analiza-promet-1.webp',alt:['Toplotni zemljevid: vpliv spola na tip prometne nesreče','Heatmap: the effect of gender on accident type'],cap:['Delež vsakega tipa nesreče glede na spol','Share of each accident type by gender'],d:['Toplotni zemljevid kaže, kolikšen delež nesreč pri moških in ženskah spada v posamezen tip, od bočnega trčenja do povoza pešca. Temnejša rdeča pomeni večji delež.','The heatmap shows what share of men’s and women’s accidents falls into each type, from side collisions to hitting a pedestrian. Darker red means a larger share.']},
+ {n:['Nesreče po odsekih','Accidents by road section'],img:'img/analiza-promet-2.webp',alt:['Stolpčni diagram števila nesreč po cestnih odsekih','Bar chart of the number of accidents per road section'],cap:['Število nesreč po cestnih odsekih','Number of accidents per road section'],d:['Stolpčni diagram razvrsti cestne odseke po številu nesreč; med njimi so Laško, Zidani Most, Radeče in Rimske Toplice.','The bar chart ranks road sections by number of accidents, among them Laško, Zidani Most, Radeče and Rimske Toplice.']}]},
+{k:'nogomet',cat:'data',c:'#a9cfdd',n:['Vizualizacija nogometnih podatkov','Football data visualisation'],ratio:1.87,fit:'contain',bg:'#233029',
+ kind:['Analiza podatkov v Pythonu','Data analysis in Python'],
+ d:[['Nogometni podatki, izrisani neposredno na igrišču: položaji igralcev in barvno kodirane poti žoge v kazenskem prostoru. Dogajanje pred golom je tako berljivo na prvi pogled.','Football data drawn straight onto the pitch: player positions and colour-coded ball paths in the penalty area, so the action in front of the goal reads at a glance.']],
+ pts:[['Igrišče, položaji igralcev in poti, narisani s kodo','Pitch, player positions and paths drawn in code'],['Barvna lestvica za razlikovanje poti','A colour scale to tell the paths apart']],
+ te:'Python · pandas · Matplotlib',links:[{u:'https://github.com/larazupanc/analizaNogometa',l:'GitHub'}],
+ items:[{img:'img/analiza-nogomet.webp',alt:['Igrišče s položaji igralcev in barvno kodiranimi potmi žoge pred golom','A pitch with player positions and colour-coded ball paths in front of the goal'],cap:['Dogajanje v kazenskem prostoru','The action in the penalty area']}]}];
+const X=[
+{n:'I-ROSE d.o.o.',s:['študentsko delo','student work'],u:[['Urejanje in posodabljanje spletnih strani ter digitalnih vsebin','Editing and updating websites and digital content'],['Komunikacija z obstoječimi in potencialnimi strankami','Communicating with existing and potential clients'],['Iskanje poslovnih priložnosti in zbiranje informacij v sistemu Odoo','Finding business opportunities and gathering information in Odoo'],['Priprava predstavitev in vsebin za splet','Preparing presentations and web content']]},
+{n:'ZON – Zasavske online novice in medijski laboratorij, Hrastnik',s:['študentsko delo','student work'],u:[['Pisanje novinarskih prispevkov o lokalnih temah','Writing news articles about local topics'],['Zbiranje informacij, spremljanje dogodkov, priprava vsebin za spletni medij','Gathering information, covering events, preparing content for a web outlet'],['Ustvarjanje video in drugih digitalnih vsebin','Creating video and other digital content'],['Urejanje spletnih objav in grafik za družbena omrežja','Editing web posts and social media graphics']]},
+{n:'Laški akademski klub (LAK)',s:['študentsko delo','student work'],u:[['Vodenje društva, koordinacija članov, organizacija dogodkov in projektov','Leading the club, coordinating members, organising events and projects'],['Priprava dokumentacije, poročil, načrtov in prijav na razpise','Preparing documentation, reports, plans and grant applications'],['Sodelovanje z lokalno skupnostjo, partnerji in organizacijami','Working with the local community, partners and organisations'],['Spremljanje članarin in administrativnih evidenc','Tracking memberships and administrative records'],['Priprava grafičnih gradiv za promocijo društva','Creating graphics to promote the club']]}];
+const SK=[[['Jeziki in ogrodja','Languages & frameworks'],'Python,JavaScript,TypeScript,Dart,React,Node.js,HTML,CSS,Electron'],[['Baze podatkov','Databases'],'SQL,PostgreSQL,MySQL,MongoDB,Firebase'],[['Analiza podatkov','Data analysis'],'pandas,Matplotlib,scikit-learn'],[['Spletne platforme in sistemi','Web platforms & systems'],'Shopify,WordPress,Odoo'],[['Digitalna orodja','Digital tools'],'Canva,GitHub']];
+const ORG=[['Organizacija in koordinacija projektov','Project organisation and coordination'],['Vodenje in sodelovanje v ekipah','Team leadership and collaboration'],['Dokumentacija, poročila in prijave na razpise','Documentation, reports and grant applications'],['Administrativno delo in vodenje evidenc','Administration and record keeping'],['Komunikacija s strankami in poslovnimi partnerji','Communicating with clients and business partners'],['Razumevanje potreb uporabnikov in iskanje praktičnih rešitev','Understanding user needs and finding practical solutions']];
+const OTH=[['Pisanje in urejanje spletnih vsebin','Writing and editing web content'],['Priprava grafičnih in promocijskih gradiv','Graphic and promotional materials'],['Vsebine za družbena omrežja','Social media content'],['Priprava video vsebin','Video content']];
+const AB=['Sem diplomirana inženirka informatike in podatkovnih tehnologij z izkušnjami na področju razvoja spletnih rešitev, administracije in koordinacije projektov. Pri delu združujem tehnično znanje, analitično razmišljanje in organizacijske sposobnosti. Izkušnje imam z izdelavo spletnih strani in trgovin, razvojem aplikacij, urejanjem dokumentacije ter komunikacijo s strankami in poslovnimi partnerji. Hitro se učim, samostojno rešujem probleme in se dobro znajdem pri delu z različnimi informacijskimi orodji.','I\'m a graduate engineer in informatics and data technologies with experience in web development, administration and project coordination. In my work I combine technical knowledge, analytical thinking and organisational skills. I have built websites and online shops, developed apps, managed documentation, and communicated with clients and business partners. I learn quickly, solve problems on my own and feel at home with a wide range of IT tools.'];
+const UI={
+kk:['// živjo!','// hello!'],
+dh:['MAPE','MY CABINET'],
+tp:[''],
+hi:['živjo! 👋','hi there! 👋'],
+go:['Odpri mape ↓','Open the folders ↓'],
+ft:['© 2026 Lara Zupanc','© 2026 Lara Zupanc'],
+copied:['E-naslov kopiran!','Email copied!'],
+open:['klikni za odpiranje','click to open'],
+play:['Poglej video','Watch the video'],zoom:['klikni za povečavo','click to enlarge'],
+w:[['Inženirka informatike','Spletna razvijalka'],['Informatics engineer','Web developer','Project coordinator']],
+role:['inženirka informatike in podatkovnih tehnologij','informatics engineer'],stud:['magisterij, FIŠ Novo mesto','master\'s, FIS Novo mesto']};
+/* ---------- builders ---------- */
+function ch(s){return `<span class="chip">${t(Array.isArray(s)?s:[s,s])}</span>`}
+function caseHTML(p,rev){
+ const si=SEL[p.k]||0,it=p.items[si],multi=p.items.length>1,n=tx(p.n),ttl=it.n?tx(it.n):n,alt=esc(t(it.alt));
+ const img=`<img src="${it.img}" alt="${alt}" loading="lazy" style="object-fit:${p.fit||'cover'}">`;
+ const inner=p.video?`${img}<button class="play" data-play="${p.video}" aria-label="${esc(t(UI.play))}"><span>▶</span><em>${t(UI.play)}</em></button>`:`${img}<b class="zm">${t(UI.zoom)}</b>`;
+ const shot=`<div class="shot${p.video?' vid':''}"${p.video?'':` data-lb="${it.img}" data-cap="${alt}" role="button" tabindex="0" aria-label="${esc(t(UI.zoom))}"`}><div class="sb"><i></i><i></i><i></i><span>${ttl}</span></div><div class="vp" style="aspect-ratio:${p.ratio};background:${p.bg||'#0a1820'}">${inner}</div></div>`;
+ const th=multi?`<div class="thumbs">${p.items.map((x,j)=>`<button class="th${j==si?' on':''}" data-sel="${p.k}:${j}" aria-pressed="${j==si}" aria-label="${esc(tx(x.n))}"><img src="${x.img}" alt="" loading="lazy"><span>${tx(x.n)}</span></button>`).join('')}</div>`:'';
+ const note=it.d?`<div class="note"><b>${ttl}</b>${t(it.d)}</div>`:'';
+ const links=p.links.length?`<div class="links">${p.links.map(l=>`<a class="lk" href="${l.u}" target="_blank" rel="noopener">${tx(l.l)}</a>`).join('')}</div>`:'';
+ return `<article class="case${rev?' rev':''}" data-k="${p.k}" data-cat="${p.cat}" style="--c:${p.c}"><figure class="fig">${shot}${th}<figcaption class="cc">${t(it.cap)}</figcaption></figure><div class="txt"><small class="kind">${t(p.kind)}</small><h3>${n}</h3>${p.d.map(x=>`<p>${t(x)}</p>`).join('')}${note}<ul class="pts">${p.pts.map(x=>`<li>${t(x)}</li>`).join('')}</ul><div class="chips">${p.te.split(' · ').map(ch).join('')}</div>${links}</div></article>`}
+const F=[
+{id:'o',c:'#a9cfdd',t:['O meni','About'],h:['Kdo sem','Who I am'],hn:['Laško · 2003 · sl / en','Laško · born 2003 · sl / en'],b:()=>`<p style="max-width:70ch">${t(AB)}</p><div class="chips">${[['Strmca, Laško','Strmca, Laško'],['Letnik 2003','Born 2003'],['Slovenščina – materni jezik','Slovenian – native'],['Angleščina – B2','English – B2']].map(ch).join('')}</div><div class="two"><div><h4>${t(['Organizacijske in poslovne kompetence','Organisational & business skills'])}</h4><ul>${ORG.map(x=>`<li>${t(x)}</li>`).join('')}</ul></div><div><h4>${t(['Druga znanja','Other skills'])}</h4><ul>${OTH.map(x=>`<li>${t(x)}</li>`).join('')}</ul></div></div><h4>${t(['Napisali so o meni','Written about me'])}</h4><a class="clip" href="https://medijski-laboratorij.si/lara-zupanc-iz-tehnicnega-sveta-v-svet-medijev/" target="_blank" rel="noopener"><small>${t(['Članek · medijski-laboratorij.si','Article · medijski-laboratorij.si'])}</small><h3>${t(['Lara Zupanc: iz tehničnega sveta v svet medijev','Lara Zupanc: from the technical world to the world of media'])}</h3><p>${t(['Članek o moji poti od informatike do medijev, objavljen na Medijskem laboratoriju.','An article about my path from informatics to the media, published by Medijski laboratorij (in Slovenian).'])}</p><span class="rd">${t(['Preberi članek','Read the article'])}</span></a>`},
+{id:'p',c:'#e0b96a',t:['Projekti','Projects'],h:['Izbrani projekti','Selected projects'],hn:['6 projektov · video · GitHub','6 projects · video · GitHub'],b:()=>`<div class="filters" role="group">${CATS.map(c=>`<button class="fb${FILT==c[0]?' on':''}" data-f="${c[0]}" aria-pressed="${FILT==c[0]}">${t(c[1])}</button>`).join('')}</div><div class="cases">${P.map(p=>caseHTML(p,false)).join('')}</div><a class="ghs" href="https://github.com/larazupanc" target="_blank" rel="noopener"><span class="c">${t(['// več projektov in kode','// more projects and code'])}</span><br><b>$</b> github.com/larazupanc<i class="cur"></i></a>`},
+{id:'e',c:'#f2cdbd',t:['Izkušnje','Experience'],h:['Delovne izkušnje','Work experience'],hn:['I-ROSE · ZON · LAK','I-ROSE · ZON · LAK'],b:()=>`<div class="idx">${X.map(x=>`<div class="ic"><small>${t(x.s)}</small><h3>${x.n}</h3><ul>${x.u.map(u=>`<li>${t(u)}</li>`).join('')}</ul></div>`).join('')}</div><a class="ticket" href="https://drustvo-lak.si/fotografski-natecaj-klak/" target="_blank" rel="noopener"><div class="stub">KLAK<small>${t(['že 4 leta','4 years'])}</small></div><div class="tk"><h3>${t(['Fotografski natečaj KLAK','The KLAK photo contest'])}</h3><p>${t(['Pri Laškem akademskem klubu natečaj vodim že 4 leta.','At the Laški akademski klub I have led the contest for 4 years.'])}</p><span class="rd">${t(['Odpri stran natečaja','Open the contest page'])}</span></div></a>`},
+{id:'s',c:'#6fa8c0',t:['Znanja','Skills'],h:['Tehnična znanja','Technical skills'],hn:['Python · JS · React · Shopify …','Python · JS · React · Shopify …'],b:()=>SK.map(g=>`<h4>${t(g[0])}</h4><div class="chips">${g[1].split(',').map(ch).join('')}</div>`).join('')},
+{id:'i',c:'#d7e6ec',t:['Izobrazba','Education'],h:['Izobrazba','Education'],hn:['Gimnazija · FERI · FIŠ','Gymnasium · FERI · FIS'],b:()=>`<div class="tl"><div><small>2018 – 2022</small><br><b>Gimnazija Lava, Celje</b></div><div><small>2022 – 2026</small><br><b>${t(['Fakulteta za elektrotehniko, računalništvo in informatiko – Univerza v Mariboru','Faculty of Electrical Engineering and Computer Science – University of Maribor'])}</b><br>${t(['Informatika in podatkovne tehnologije (UN), smer Informacijski sistemi','Informatics and Data Technologies (BSc), Information Systems track'])}</div><div><small>${t(['od 2026','from 2026'])}</small><br><b>${t(['Fakulteta za informacijske študije v Novem mestu','Faculty of Information Studies in Novo mesto'])}</b><br>${t(['Informatika v sodobni družbi (MAG)','Informatics in Modern Society (MSc)'])}</div></div>`},
+{id:'k',c:'#e0b96a',t:['Kontakt','Contact'],h:['Kontaktiraj me','Get in touch'],hn:['e-pošta · telefon · GitHub','email · phone · GitHub'],b:()=>`<div class="ct"><button id="em"><small>E-mail</small>zupanclara03@gmail.com</button><a href="tel:+38631590680"><small>${t(['Telefon','Phone'])}</small>031-590-680</a><a href="https://github.com/larazupanc" target="_blank" rel="noopener"><small>GitHub</small>larazupanc</a><a><small>${t(['Lokacija','Location'])}</small>Strmca, 3270 Laško</a></div>`}];
+/* ---------- behaviour ---------- */
+function toast(m){const e=$('#toast');e.textContent=m;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),2200)}
+let dropped=false;
+const io=new IntersectionObserver(es=>{if(es[0].isIntersecting&&!dropped){dropped=true;document.querySelectorAll('.folder').forEach(f=>{f.classList.remove('pre');f.classList.add('fall')})}},{threshold:.05});
+io.observe($('#drawer'));
+function applyFilter(){let v=0;document.querySelectorAll('.case').forEach(c=>{const on=FILT=='all'||c.dataset.cat==FILT;c.classList.toggle('off',!on);if(on){c.classList.toggle('rev',v%2==1);v++;c.classList.remove('pop');void c.offsetWidth;c.classList.add('pop')}});document.querySelectorAll('.fb').forEach(b=>{const on=b.dataset.f==FILT;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
+function render(){
+const open=[...document.querySelectorAll('.folder.open')].map(f=>f.id);if(!FL.children.length)open.push('o');
+document.documentElement.lang=L;
+FL.innerHTML=F.map((f,i)=>`<section class="folder ${dropped?'':'pre'}${open.includes(f.id)?' open':''}" id="${f.id}" style="--c:${f.c};--i:${i};--del:${i*.14}s"><div class="tab">${t(f.t)}</div><button class="fh" aria-expanded="${open.includes(f.id)}"><span><em>${t(f.h)}</em><small>${t(f.hn)} · ${t(UI.open)}</small></span><b class="pl">+</b></button><div class="body"><div class="bi"><div class="sheet">${f.b()}</div></div></div></section>`).join('');
+$('#nv').innerHTML=F.map(f=>`<button data-go="${f.id}" style="--c:${f.c}">${t(f.t)}</button>`).join('');
+$('#nm').innerHTML=['LARA','ZUPANC'].map(w=>[...w].map(x=>`<span>${x}</span>`).join('')).join('<br>');
+$('#kk').textContent=t(UI.kk);$('#dh').textContent=t(UI.dh);$('#tp').textContent=t(UI.tp);$('#st').textContent=t(UI.hi);$('#go').textContent=t(UI.go);$('#ft').textContent=t(UI.ft);
+document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l==L));
+$('#cd').innerHTML=[`<span class="k">const</span> lara = {`,`&nbsp;&nbsp;role: <span class="s">"${t(UI.role)}"</span>,`,`&nbsp;&nbsp;from: <span class="s">"Laško, SI"</span>,`,`&nbsp;&nbsp;stack: [<span class="s">"React"</span>, <span class="s">"Node.js"</span>, <span class="s">"Python"</span>],`,`&nbsp;&nbsp;languages: [<span class="s">"sl"</span>, <span class="s">"en"</span>],`,`&nbsp;&nbsp;studying: <span class="s">"${t(UI.stud)}"</span>`,`};`,`<span class="c">${t(UI.kk)}</span>`].map(l=>`<div class="ln">${l}</div>`).join('');
+document.querySelectorAll('.ln').forEach((l,i)=>setTimeout(()=>l.classList.add('on'),250+i*260));
+applyFilter();tw.i=0;tw.j=0;tw.del=0}
+const tw={i:0,j:0,del:0};
+setInterval(()=>{const a=UI.w[L=='sl'?0:1],w=a[tw.i%4];if(!tw.del){if(++tw.j>w.length+14)tw.del=1;}else{if(--tw.j<0){tw.del=0;tw.j=0;tw.i++}}$('#tw').textContent=a[tw.i%4].slice(0,Math.max(0,tw.j))},85);
+$('#orb').innerHTML=['React','Python','Node.js','Dart','Shopify','Odoo','Firebase','SQL'].map((s,i)=>`<div class="oc" style="--a:${i*45}deg;--r:${i%2?150:190}px"><span>${s}</span></div>`).join('');
+function openF(id){const f=$('#'+id);f.classList.add('open');f.querySelector('.fh').setAttribute('aria-expanded','true');setTimeout(()=>f.scrollIntoView({behavior:'smooth',block:'start'}),60)}
+function balloons(){const cols=['#e0b96a','#161616','#c9ccd0','#a9cfdd','#f2cdbd'];for(let i=0;i<16;i++){const b=document.createElement('div');b.className='bl';b.style.cssText=`left:${Math.random()*95}vw;background:${cols[i%5]};--t:${4+Math.random()*3}s;--dx:${Math.random()*80-40}px;--rt:${Math.random()*40-20}deg;animation-delay:${Math.random()*.9}s`;document.body.appendChild(b);setTimeout(()=>b.remove(),8500)}}
+const LB=$('#lb');
+function lbOpen(src,cap){LB.querySelector('img').src=src;LB.querySelector('img').alt=cap;LB.querySelector('p').textContent=cap;LB.classList.add('on');document.body.style.overflow='hidden';LB.querySelector('.x').focus()}
+function lbClose(){LB.classList.remove('on');document.body.style.overflow=''}
+LB.addEventListener('click',lbClose);
+document.addEventListener('keydown',e=>{if(e.key=='Escape'&&LB.classList.contains('on'))lbClose()});
+document.addEventListener('click',e=>{
+const l=e.target.closest('[data-l]');if(l){L=l.dataset.l;try{localStorage.setItem('lang',L)}catch(x){}render();return}
+const g=e.target.closest('[data-go]');if(g){openF(g.dataset.go);return}
+if(e.target.closest('#go')){openF('o');return}
+if(e.target.closest('#ph')){balloons();return}
+const fb=e.target.closest('[data-f]');if(fb){FILT=fb.dataset.f;applyFilter();return}
+const pl=e.target.closest('[data-play]');if(pl){pl.closest('.vp').innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${pl.dataset.play}?autoplay=1&rel=0" title="ZAgility" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;return}
+const sl=e.target.closest('[data-sel]');if(sl){const[k,j]=sl.dataset.sel.split(':'),old=sl.closest('.case'),p=P.find(x=>x.k==k);SEL[k]=+j;const tmp=document.createElement('div');tmp.innerHTML=caseHTML(p,old.classList.contains('rev'));const nc=tmp.firstElementChild;nc.classList.add('sw');old.replaceWith(nc);const nb=nc.querySelector('.th.on');if(nb)nb.focus();return}
+const lbx=e.target.closest('[data-lb]');if(lbx){lbOpen(lbx.dataset.lb,lbx.dataset.cap);return}
+const fh=e.target.closest('.fh');if(fh){const f=fh.parentElement,o=f.classList.toggle('open');fh.setAttribute('aria-expanded',o);return}
+if(e.target.closest('#em')){try{navigator.clipboard.writeText('zupanclara03@gmail.com')}catch(x){}toast(t(UI.copied))}});
+document.addEventListener('keydown',e=>{const s=e.target.closest&&e.target.closest('[data-lb]');if(s&&(e.key=='Enter'||e.key==' ')){e.preventDefault();s.click()}});
+$('#ph').addEventListener('keydown',e=>{if(e.key=='Enter'||e.key==' '){e.preventDefault();balloons()}});
+/* folders lift and the ones below drop away on hover */
+function hov(h){const fs=[...document.querySelectorAll('.folder')];fs.forEach((f,i)=>{f.classList.toggle('hov',i==h);f.style.setProperty('--ty',h<0?'0px':i<h?'0px':i==h?'-18px':'26px');f.style.setProperty('--rot',h<0?'0deg':i==h?(i%2?'.5deg':'-.5deg'):'0deg')})}
+FL.addEventListener('mouseover',e=>{const f=e.target.closest('.folder');hov(f?[...FL.children].indexOf(f):-1)});
+FL.addEventListener('mouseleave',()=>hov(-1));
+FL.addEventListener('animationend',e=>{if(e.target.classList.contains('folder'))e.target.classList.remove('fall')});
+/* screenshots tilt toward the pointer and catch a bit of light */
+FL.addEventListener('mousemove',e=>{const c=e.target.closest('.shot');if(!c||c.classList.contains('vid'))return;const b=c.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;c.style.transform=`perspective(900px) rotateX(${-y*7}deg) rotateY(${x*9}deg) scale(1.015)`;c.style.setProperty('--gx',(x+.5)*100+'%');c.style.setProperty('--gy',(y+.5)*100+'%')});
+FL.addEventListener('pointerout',e=>{const c=e.target.closest('.shot');if(c&&!c.contains(e.relatedTarget))c.style.transform=''});
+FL.addEventListener('mouseover',e=>{const c=e.target.closest('.chip');if(c)c.style.setProperty('--rr',(Math.random()*16-8).toFixed(1)+'deg')});
+$('#hero').addEventListener('mousemove',e=>{const h=$('#hero'),b=h.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;h.style.setProperty('--mx',(x+.5)*100+'%');h.style.setProperty('--my',(y+.5)*100+'%');$('#ph').style.transform=`perspective(700px) rotateX(${-y*18}deg) rotateY(${x*18}deg)`;$('#orb').style.translate=`${x*-24}px ${y*-24}px`});
+render();
+</script></body></html>
