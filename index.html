@@ -331,7 +331,7 @@ $('#nv').innerHTML=F.map(f=>`<button data-go="${f.id}" style="--c:${f.c}">${t(f.
 $('#nm').innerHTML=['LARA','ZUPANC'].map(w=>[...w].map(x=>`<span>${x}</span>`).join('')).join('<br>');
 $('#kk').textContent=t(UI.kk);$('#dh').textContent=t(UI.dh);$('#tp').textContent=t(UI.tp);$('#st').textContent=t(UI.hi);$('#go').textContent=t(UI.go);$('#ft').textContent=t(UI.ft);
 document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l==L));
-$('#cd').innerHTML=[`<span class="k">const</span> lara = {`,`&nbsp;&nbsp;role: <span class="s">"${t(UI.role)}"</span>,`,`&nbsp;&nbsp;from: <span class="s">"Laško, SI"</span>,`,`&nbsp;&nbsp;stack: [<span class="s">"React"</span>, <span class="s">"Node.js"</span>, <span class="s">"Python"</span>],`,`&nbsp;&nbsp;languages: [<span class="s">"sl"</span>, <span class="s">"en"</span>],`,`&nbsp;&nbsp;studying: <span class="s">"${t(UI.stud)}"</span>`,`};`,`<span class="c">${t(UI.kk)}</span>`].map(l=>`<div class="ln">${l}</div>`).join('');
+$('#cd').innerHTML=[`<span class="k">const</span> lara = {`,`&nbsp;&nbsp;role: <span class="s">"${t(UI.role)}"</span>,`,`&nbsp;&nbsp;from: <span class="s">"Laško, SI"</span>,`,`&nbsp;&nbsp;languages: [<span class="s">"sl"</span>, <span class="s">"en"</span>],`,`&nbsp;&nbsp;studying: <span class="s">"${t(UI.stud)}"</span>`,`};`,`<span class="c">${t(UI.kk)}</span>`].map(l=>`<div class="ln">${l}</div>`).join('');
 document.querySelectorAll('.ln').forEach((l,i)=>setTimeout(()=>l.classList.add('on'),250+i*260));
 applyFilter();tw.i=0;tw.j=0;tw.del=0}
 const tw={i:0,j:0,del:0};
